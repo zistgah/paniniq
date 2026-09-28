@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Panini Q: an oscillator substrate, the PEDLER engine and quantum validation, as a realization backend of PANINI"
+doi: 10.5281/zenodo.23020648
 version: 0.1.0
 license: GPL-3.0-or-later
 repository-code: "https://github.com/zistgah/paniniq"

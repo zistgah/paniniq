@@ -1,5 +1,7 @@
 # Panini Q
 
+DOI: [10.5281/zenodo.23020648](https://doi.org/10.5281/zenodo.23020648)
+
 Panini Q is the quantum-simulation realization backend of PANINI. This first seed carries the
 PEDLER / Jelly-Substrate stack described below: an oscillator substrate, the PEDLER automaton
 built on it, a Qiskit validation bridge, Max-Cut benchmarks and a mocked hardware bridge.
