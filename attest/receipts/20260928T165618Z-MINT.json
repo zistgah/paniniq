@@ -1,0 +1,19 @@
+{
+    "_type": "https://in-toto.io/Statement/v1",
+    "predicateType": "https://project-ilm.org/attestations/candor/v1",
+    "subject": [
+        {
+            "name": "zistgah/paniniq",
+            "digest": {
+                "gitCommit": "e3fc3bb4afd59a2795bd071d3735ac8099bf7377"
+            }
+        }
+    ],
+    "predicate": {
+        "action": "MINT",
+        "reason": "seed",
+        "utc": "20260928T165618Z",
+        "host": "ilm01-lin",
+        "note": "10.5281/zenodo.23020648"
+    }
+}
