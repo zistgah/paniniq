@@ -1,0 +1,12 @@
+# Core -- required for JellySubstrate, PedlerEngine, the oscillator and
+# brute-force Max-Cut solvers, and the (mocked) hardware bridge.
+numpy>=1.24
+scipy>=1.10
+
+# Optional extras -- not required to import the package, only to exercise
+# specific pieces. Each piece degrades gracefully (skips with a clear
+# message) when its extra isn't installed; see README.md's status table.
+#
+#   qiskit>=1.0          # QiskitValidator (CTQW circuit) + solve_max_cut_qaoa
+#   torch>=2.0           # ClassicalSubstrate (vectorized / GPU substrate)
+#   pyserial>=3.5        # only if you swap MockSerialPort for a real serial.Serial(...)

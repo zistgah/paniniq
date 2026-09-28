@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Panini Q: an oscillator substrate, the PEDLER engine and quantum validation, as a realization backend of PANINI"
+version: 0.1.0
+license: GPL-3.0-or-later
+repository-code: "https://github.com/zistgah/paniniq"
+authors:
+  - family-names: Choudhary
+    given-names: Abhishek
+    affiliation: AyeAI
+    orcid: "https://orcid.org/0009-0002-0684-8320"
+keywords:
+  - Panini Q
+  - PANINI
+  - PEDLER
+  - Kuramoto model
+  - Ising machine
+  - Max-Cut
+  - continuous-time quantum walk
+  - Qiskit
+abstract: >-
+  The quantum-simulation realization backend of PANINI. A Kuramoto oscillator substrate, the
+  PEDLER automaton on it, a Qiskit continuous-time quantum walk validator, Max-Cut benchmarks
+  and a mocked hardware bridge, with what is tested, mocked and open stated plainly.

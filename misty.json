@@ -1,0 +1,34 @@
+{
+ "title": "Panini Q: an oscillator substrate, the PEDLER engine and quantum validation, as a realization backend of PANINI",
+ "version": "0.1.0",
+ "upload_type": "software",
+ "description": "Panini Q is the quantum-simulation realization backend of PANINI. Its first seed is a Python package: a network of phase oscillators with evanescent coupling relaxed by the Kuramoto equations (the Jelly Substrate); the PEDLER automaton on that substrate, in which point events shape an inclination field, failure to phase-lock spawns a new state, and faded or merged states are pruned; a bridge that maps the coupling matrix onto a Hamiltonian and runs a continuous-time quantum walk on ceil(log2 N) qubits in Qiskit; Max-Cut benchmarks comparing the oscillator substrate as an anti-ferromagnetic Ising machine with brute force and QAOA; and a mocked serial bridge that packs the coupling matrix into frames for a physical oscillator mesh. Twenty-three tests assert its behaviour, the Qiskit pieces executed with qiskit 2.5.2; the torch substrate is written but not executed, and the hardware port is mocked. The repository states what is tested, mocked and open, keeps the author's terms beside their common equivalents, and places the work in his layering of front end, middleware and realization backends and in his three Acts.",
+ "license": "GPL-3.0-or-later",
+ "access_right": "open",
+ "language": "eng",
+ "creators": [
+  {
+   "name": "Choudhary, Abhishek",
+   "affiliation": "AyeAI",
+   "orcid": "0009-0002-0684-8320"
+  }
+ ],
+ "keywords": [
+  "Panini Q",
+  "PANINI",
+  "PEDLER",
+  "Kuramoto model",
+  "coupled oscillators",
+  "Ising machine",
+  "Max-Cut",
+  "continuous-time quantum walk",
+  "QAOA",
+  "Qiskit",
+  "Zistgah"
+ ],
+ "programming_language": [
+  "Python"
+ ],
+ "repository": "https://github.com/zistgah/paniniq",
+ "related_identifiers": []
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panini Q</title>
+<meta name="description" content="Panini Q: the quantum-simulation realization backend of PANINI. An oscillator substrate, the PEDLER engine, quantum validation and Max-Cut benchmarks.">
+<style>
+:root{--bg:#f7f5ef;--fg:#1d1c19;--mute:#5d5a52;--line:#d9d4c7;--acc:#7a3e12;--card:#fffdf8;box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root{--bg:#141412;--fg:#ece8de;--mute:#a39e90;--line:#34322c;--acc:#e0a36b;--card:#1c1b18}}
+*{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:52rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+h1{font-size:2.4rem;margin:0 0 .25rem;letter-spacing:.01em}
+h2{font-size:1.25rem;margin:2.2rem 0 .6rem;color:var(--acc)}
+p.lead{color:var(--mute);margin-top:0}
+.stack{display:grid;gap:.5rem}
+.layer{border:1px solid var(--line);background:var(--card);border-radius:6px;padding:.6rem .9rem}
+.layer b{display:block}
+.layer.here{border-color:var(--acc);box-shadow:inset 4px 0 0 var(--acc)}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:.45rem .5rem;text-align:left;vertical-align:top}
+a{color:var(--acc)}
+footer{margin-top:3rem;color:var(--mute);font-size:.85rem}
+code{font-size:.9em}
+</style>
+</head>
+<body>
+<main>
+<h1>Panini Q</h1>
+<p class="lead">The quantum-simulation realization backend of PANINI: substrates that programs can be realised on and validated against.</p>
+
+<h2>Where it sits</h2>
+<div class="stack">
+ <div class="layer"><b>Front end</b>ILM and the language parsers of tajziya, Sanskrit first.</div>
+ <div class="layer"><b>Middleware</b>PANINI's own front ends and the PANINI language.</div>
+ <div class="layer"><b>Core PANINI</b>Common semantics plus decorators.</div>
+ <div class="layer here"><b>Realization backends</b>Panini Q: an oscillator substrate, the PEDLER automaton on it, and a quantum bridge that checks the classical dynamics.</div>
+</div>
+
+<h2>What is here, and how far it is proved</h2>
+<div class="wrap"><table>
+<tr><th>Piece</th><th>State</th></tr>
+<tr><td>Jelly Substrate: Kuramoto phase oscillators, evanescent coupling, growth and pruning</td><td>tested</td></tr>
+<tr><td>PEDLER engine: inclination field, spawn, decay, prune and consolidate</td><td>tested</td></tr>
+<tr><td>Max-Cut: oscillator Ising machine against brute force</td><td>tested on six graphs</td></tr>
+<tr><td>Quantum bridge: Hamiltonian, continuous-time quantum walk on ceil(log2 N) qubits, QAOA baseline</td><td>tested with qiskit 2.5.2</td></tr>
+<tr><td>Torch substrate for large networks</td><td>written, not executed</td></tr>
+<tr><td>Hardware bridge to a physical oscillator mesh</td><td>frame packing tested; the port is mocked</td></tr>
+</table></div>
+
+<h2>Read further</h2>
+<p><a href="https://github.com/zistgah/paniniq">The repository</a>, with its
+<a href="https://github.com/zistgah/paniniq/blob/main/README.md">README</a>,
+<a href="https://github.com/zistgah/paniniq/blob/main/CONTEXT.md">context</a> and
+<a href="https://github.com/zistgah/paniniq/blob/main/GLOSSARY.md">glossary</a>, which keeps the author's terms beside their common equivalents.
+Run the gate with <code>bash ops/verify.sh</code>.</p>
+
+<footer>© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. Code GPL-3.0-or-later.</footer>
+</main>
+</body>
+</html>
