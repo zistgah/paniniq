@@ -197,3 +197,11 @@ GPL-3.0-or-later, see `LICENSE`. Copyright (C) 1993-2026 Abhishek
 Choudhary. `LICENSE` is the FSF's verbatim text: its sha256,
 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986, is the digest of
 <https://www.gnu.org/licenses/gpl-3.0.txt>, and the gate checks it.
+
+<!-- trademarks:begin -->
+---
+AyeAI®, AyeCNSe® and AyeAM® are registered trademarks of Abhishek Choudhary in India, used and claimed worldwide since
+2019. The names of his products and projects are his trademarks; see [legal/TRADEMARKS.md](legal/TRADEMARKS.md). Code
+licences in this repository grant copyright permissions only and no right in any mark.
+© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+<!-- trademarks:end -->
